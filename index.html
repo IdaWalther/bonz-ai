@@ -8,13 +8,14 @@
     <script src="https://kit.fontawesome.com/d7e80e3740.js" crossorigin="anonymous"></script>
 </head>
 <body class="body" id="top">
+    <div class="wrapper">
     <header class="header">
         <nav class="header__nav">
            <input id="hamburger" class="header__hamburger" type="checkbox">
             <label class="header__hamburger-btn" for="hamburger"><span></span></label>
             <ul class="header__menu">
-            <li><a href="" class="header__link"><i class="fa-solid fa-house"></i> Start</a></li>
-            <li><a href="/hotellet.html" class="header__link"><i class="fa-solid fa-hotel"></i> Hotellet</a></li>
+            <li><a href="/index.html" class="header__link header__link--active"><i class="fa-solid fa-house"></i> Start</a></li>
+            <li><a href="/rummen.html" class="header__link"><i class="fa-solid fa-hotel"></i> Rummen</a></li>
             <li><a href="" class="header__link"><i class="fa-solid fa-bell-concierge"></i> Boka</a></li>
             <li><a href="" class="header__link"><i class="fa-solid fa-location-dot"></i> Hitta Hit</a></li>
             </ul>
@@ -23,7 +24,7 @@
     </header>
     <main class="main">
         <section class="main__hero">
-            <h1 class="main__title">Bonz.AI</h1>
+            <h1 class="main__title">Bonz.ai</h1>
             <h2 class="main__subtitle">För en unik AI-driven eko vistelse</h2>
         </section>
         <h2 class="main__subtitle main__subtitle--big">Utforska</h2>
@@ -53,9 +54,30 @@
                 <img src="/assets/photos/winter.png" alt="norrsken som syns inifrån en stuga" class="main__image">
             </article>
         </section>
+        <section class="main__back">
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i> Tillbaka till toppen!</a>
+        </section>
     </main>
     <footer class="footer">
-        <a href="#top" class="footer__link"><i class="fa-solid fa-arrow-up"></i> Tillbaka till toppen!</a>
+        <section class="footer__nav">
+            <h4>Kontakt</h4>
+            <p>contact@bonz-ai.com</p>
+            <p>+46 012 345 67 89</p>
+        </section>
+        <section class="footer__nav">
+            <h4>Betalningsmetoder</h4>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>        
+        </section>
+        <section class="footer__nav">
+            <h4>Social Media </h4>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+
+        </section>
     </footer>
+    </div>
 </body>
 </html>

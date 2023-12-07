@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +13,12 @@
 }
 .body {
     background-color: var(--background-color);
+    font-family: 'Spectral', serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
 }
 .header {
     background: var(--dark-color);
@@ -28,7 +36,7 @@
     list-style-type: none; 
 }
 
-.header__menu a, .footer a {
+.header__menu a, .main a {
     text-decoration: none;
     color: inherit;
 }
@@ -40,33 +48,43 @@
     margin: 0;
 }
 
-.header__link:hover {
+.header__link:hover, .header__link--active {
     background-color: rgba(255,255,255,.2);
 }
 
+.header__nav{
+    position: relative;
+}
+
 .header__logo {
-height: 40px;
-position: absolute;
-top: 1.5rem;
-right:1.5rem;
+    height: 40px;
+    position: absolute;
+    top: 1.5rem;
+    right:1.5rem;
 }
 
 .header__hamburger {
     display: none;
 }
 
+/*Here is the code for the index page*/
 .main__hero {
-    height: 85vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem;2
     border-bottom: 4px ridge #778d45;
     background-image: url(/assets/photos/bed.png);
     background-position: 10%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*the hero page for hotel rooms*/
+.main__hero--room {
+background-image: url(/assets/photos/bed3.png);
 }
 
 .main__title {
@@ -81,12 +99,14 @@ right:1.5rem;
 
 .main__subtitle {
     color: var(--dark-color);
+    background-color: rgba(255,255,255, .5);
     text-align: center;
-    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 
 .main__subtitle--big {
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 .main__activities {
@@ -115,10 +135,33 @@ right:1.5rem;
     border-radius: 8px;
     margin:.5rem;
 }
+.main__back {
+    text-align: center;
+    margin: 1rem;
+}
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.footer__nav:nth-child(2), .footer__nav:nth-child(3) {
     text-align: center;
 }
+
+.footer i {
+    font-size: 2rem;
+    padding: .3rem;
+}
+
+/*Here is the codce for the hotel room page*/
+
+
 
 /*Media query for phones*/
 @media (max-width: 800px) {
@@ -129,6 +172,31 @@ right:1.5rem;
     .main__subtitle--big {
         font-size: 4rem;
     }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer__nav:nth-child(1) { 
+        align-self: center;
+        text-align: center;
+        order: 2;
+    }
+    .footer__nav:nth-child(2) {
+        text-align: left;
+        align-self: left;
+        order: 1;
+    }
+
+    .footer__nav:nth-child(3) {
+        align-self: flex-end;
+        text-align: center;
+        order: 3;
+    }
+
+   
 }
 
 /*Media query for phones*/
@@ -144,12 +212,16 @@ right:1.5rem;
         height: 10vh;
     }
 
+    .header__logo {
+        left:1.5rem;
+    }
+
     .header__hamburger-btn {
         display: flex;
         align-items: center;
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        right: 2rem;
         width: 2rem;
         height: 2rem;
         cursor: pointer;
@@ -191,7 +263,7 @@ right:1.5rem;
     }
     .header__hamburger:checked ~ .header__menu {
         visibility: visible;
-        left: 0;
+        right: 0;
         top: 10vh;
     }
 
@@ -201,13 +273,13 @@ right:1.5rem;
         position: absolute;
         width:200px;
         transition: all .8s ease-in-out;
-        top: -100%;
-        left:0;
+        right: -100%;
+        top:10vh;
         border-bottom:var(--light-color) ridge 2px;
-        border-right:var(--light-color) ridge 2px;
+        border-left:var(--light-color) ridge 2px;
     }
 
-    .header__link:hover {
+    .header__link:hover, .header__link--active {
        min-width: 196px;
        text-align: center;
     }
