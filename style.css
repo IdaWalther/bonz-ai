@@ -281,6 +281,31 @@ input[type=submit]:hover {
 .booking__subtitle {
     font-size: 3rem;
     text-align: center;
+    padding: 1rem;
+}
+
+.happenings, .booked-rooms__room {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+    margin: 6rem 0 3rem 0;
+}
+
+.happenings__img {
+    width: 100%;
+}
+
+.happenings__info {
+    padding: 0 3rem;
+}
+.booked-rooms__room {
+    background-color: var(--light-color);
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    padding: 1.5rem;
+}
+
+.booked-rooms__img {
+    width: 100%;
 }
 
 /*Media query for ipads*/
@@ -320,7 +345,21 @@ input[type=submit]:hover {
         order: 3;
     }
 
-   
+    .form, .happenings, .booked-rooms__room {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .booking__subtitle {
+        font-size: 2.4rem;
+    }
+
+    .happenings--mobile .happenings__image {
+        order: 1;
+    }
+
+    .happenings--mobile .happenings__info {
+        order: 2;
+    }
 }
 
 /*Media query for phones*/
@@ -415,5 +454,9 @@ input[type=submit]:hover {
     .hotelroom__info {
         width: 100%;
         margin: auto;
+    }
+
+    .booking__subtitle {
+        font-size: 1.8rem;
     }
 }
