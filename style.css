@@ -10,7 +10,7 @@
     --dark-color: #171717;
     --light-color: #f6f6f6;
     --background-color: #f0f0f0;
-    --btn-color: #49565f;
+    --btn-color: #053558;
 }
 
 .body {
@@ -79,7 +79,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    border-bottom: 4px ridge #778d45;
+    border-bottom: 6px ridge var(--btn-color);
     background-image: url(/assets/photos/bed.png);
     background-position: 10%;
     background-repeat: no-repeat;
@@ -88,6 +88,10 @@
 
 .hero--room {
 background-image: url(/assets/photos/bed3.png);
+}
+
+.hero--reserve {
+    background-image: url(/assets/photos/bed2.png);
 }
 
 .hero__title {
@@ -187,7 +191,7 @@ background-image: url(/assets/photos/bed3.png);
 
 .hotelroom__info {
     width: 50%;
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     display: grid;
 }
 
@@ -214,11 +218,69 @@ background-image: url(/assets/photos/bed3.png);
 }
 
 .hotelroom__reserve-btn:hover {
-    background-color: #053558;
+    background-color: #49565f;
 }
 
 .hotelroom__info a {
     color: var(--light-color)
+}
+
+/* Style for boka page */
+.form-wrapper {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--btn-color);
+    color: var(--light-color);
+}
+.form-wrapper {
+    padding: 3rem 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.form {
+    display: grid;
+    padding: 0 .6rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.form__input {
+    padding: 1rem;
+    width:100%;
+    border: none;
+}
+
+.form__search {
+  align-self: flex-end;
+  margin-right: .5rem;
+}
+
+input[type=submit] {
+    background-color: var(--btn-color);
+    color: var(--light-color);
+}
+
+input[type=submit]:hover {
+    background-color: #49565f;
+    cursor: pointer;
+}
+
+.fake {
+    display: grid;
+    justify-content: flex-end;
+}
+.fake__btn {
+    width: 150px;
+}
+
+.booking--none {
+    display: none;
+}
+
+.booking__subtitle {
+    font-size: 3rem;
+    text-align: center;
 }
 
 /*Media query for ipads*/
