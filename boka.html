@@ -17,10 +17,8 @@
                 <label class="header__hamburger-btn" for="hamburger"><span></span></label>
                 <ul class="header__menu">
                     <li><a href="/index.html" class="header__link"><i class="fa-solid fa-house"></i> Start</a></li>
-                    <li><a href="/rummen.html" class="header__link"><i
-                                class="fa-solid fa-hotel"></i> Rummen</a></li>
+                    <li><a href="/rummen.html" class="header__link"><i class="fa-solid fa-hotel"></i> Rummen</a></li>
                     <li><a href="/boka.html" class="header__link header__link--active"><i class="fa-solid fa-bell-concierge"></i> Boka</a></li>
-                    <li><a href="" class="header__link"><i class="fa-solid fa-location-dot"></i> Hitta Hit</a></li>
                 </ul>
                 <img class="header__logo" src="/assets/logo/bonz.ai-logo-white-portrait.png" alt="Logga för Bonz.AI">
             </nav>
@@ -30,146 +28,282 @@
                 <h1 class="hero__title">Bokning</h1>
                 <h3 class="hero__subtitle">För din chans att komma bort</h3>
             </section>
-              <section class="form-wrapper">
-              <form class="form">
-                <section class="form__input-group">
-                <label class="form__label" for="from-date">Ankomst datum</label>
-                <input class="form__input" type="date" id="from-date">
-              </section>
+            <section class="form-wrapper">
+                <form class="form">
+                    <section class="form__input-group">
+                        <label class="form__label" for="from-date">Ankomst datum</label>
+                        <input class="form__input" type="date" id="from-date">
+                    </section>
 
-              <section class="form__input-group">
-                <label class="form__label" for="to-date">Avrese datum</label>
-                <input class="form__input" type="date" id="to-date">
-              </section>
-        
-              <section class="form__input-group">
-                <label class="form__label" for="vuxna">Vuxna</label>
-                <input class="form__input" type="number" min="0" id="vuxna" placeholder="0">
-              </section>
+                    <section class="form__input-group">
+                        <label class="form__label" for="to-date">Avrese datum</label>
+                        <input class="form__input" type="date" id="to-date">
+                    </section>
 
-              <section class="form__input-group"> 
-                <label class="form__label" for="barn">Barn</label>
-                <input class="form__input" type="number" min="0" id="barn" placeholder="0">
-              </section>
-              <section class="form__search">
-                <input class="form__input" type="submit" value="Sök rum">
-              </section>
-              </form>
+                    <section class="form__input-group">
+                        <label class="form__label" for="vuxna">Vuxna</label>
+                        <input class="form__input" type="number" min="0" id="vuxna" placeholder="0">
+                    </section>
+
+                    <section class="form__input-group">
+                        <label class="form__label" for="barn">Barn</label>
+                        <input class="form__input" type="number" min="0" id="barn" placeholder="0">
+                    </section>
+                    <section class="form__search">
+                        <input class="form__input" type="submit" value="Sök rum">
+                    </section>
+                </form>
             </section>
 
+            <!--Den här sektionen "Fejka resultat är egentligen inte en del av sidan. -->
+            <!--Tanken med Fejka sökresultat knappen är att visa vad som bör hända när man klickar på knappen Sök rum. -->
+
             <section class="fake">
-                <button class="fake__btn" data-id="one">Tillbaka</button>
-                <button class="fake__btn" data-id="two">Fejka sökresultat</button>
-              </section>
-            <article class="booking" id="one">
-                <section class="happenings">
+                <button class="fake__btn" data-id="back">Tillbaka</button>
+                <button class="fake__btn" data-id="result">Fejka sökresultat</button>
+            </section>
+            <section class="booking" id="back">
+                <article class="happenings">
                     <section class="happenings__image">
                         <img src="/assets/photos/09-night.jpg" alt="a image of" class="happenings__img">
                     </section>
                     <section class="happenings__info">
                         <h2 class="happenings__subtitle">Prisvinnande</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam alias aut rem, molestias qui, nihil necessitatibus tempore eum eius animi ullam similique minus labore, explicabo ab id dolores tenetur?</p>
-                        <p>Dolorem earum nobis architecto amet placeat quisquam fugit magnam, incidunt sunt laborum quis hic porro consequatur consequuntur dignissimos odio non quibusdam, eaque ratione itaque! Aliquid saepe similique numquam illum sit!</p>                    </section>
-                </section>
-                <section class="happenings happenings--mobile">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam alias aut rem,
+                            molestias qui, nihil necessitatibus tempore eum eius animi ullam similique minus labore,
+                            explicabo ab id dolores tenetur?</p>
+                        <p>Dolorem earum nobis architecto amet placeat quisquam fugit magnam, incidunt sunt laborum quis
+                            hic porro consequatur consequuntur dignissimos odio non quibusdam, eaque ratione itaque!
+                            Aliquid saepe similique numquam illum sit!</p>
+                    </section>
+                </article>
+                <article class="happenings happenings--mobile">
                     <section class="happenings__info">
                         <h2 class="happenings__subtitle">Aktiviteter</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet quisquam quia fugiat sunt porro tenetur. Sit, ipsa? Ad laudantium, iure delectus voluptatibus culpa dignissimos repudiandae eius fugit totam voluptatem!</p>
-                        <p>Impedit, ipsum, sed explicabo maiores cupiditate dolores doloribus saepe eveniet laborum perferendis repudiandae eum porro? Dolorem neque dignissimos provident, maiores dolore id, illo minus commodi, quis accusamus explicabo quibusdam rerum?</p>
-                        <p>Voluptate atque beatae maxime et veniam cupiditate, officia reprehenderit ipsa ratione. Ullam est corrupti soluta. Laudantium debitis repellat illo minima tempore accusamus nobis, expedita cum? Ipsa sunt error vero earum!</p>
-                        <p>Autem fugit quasi minus porro voluptate veniam nesciunt vel quia itaque ducimus, accusamus sit dolorem tempore beatae a distinctio maiores impedit alias aut totam? Ducimus, odit illo. Hic, ex expedita.</p>
-                        <p>Accusamus, voluptates ipsa iure ullam excepturi aspernatur vitae perspiciatis commodi! Velit, iste cumque cum, perferendis deserunt ipsum laudantium sit eveniet non enim perspiciatis. A, ab reiciendis repudiandae nisi velit recusandae?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet quisquam quia fugiat sunt
+                            porro tenetur. Sit, ipsa? Ad laudantium, iure delectus voluptatibus culpa dignissimos
+                            repudiandae eius fugit totam voluptatem!</p>
+                        <p>Impedit, ipsum, sed explicabo maiores cupiditate dolores doloribus saepe eveniet laborum
+                            perferendis repudiandae eum porro? Dolorem neque dignissimos provident, maiores dolore id,
+                            illo minus commodi, quis accusamus explicabo quibusdam rerum?</p>
+                        <p>Voluptate atque beatae maxime et veniam cupiditate, officia reprehenderit ipsa ratione. Ullam
+                            est corrupti soluta. Laudantium debitis repellat illo minima tempore accusamus nobis,
+                            expedita cum? Ipsa sunt error vero earum!</p>
+                        <p>Autem fugit quasi minus porro voluptate veniam nesciunt vel quia itaque ducimus, accusamus
+                            sit dolorem tempore beatae a distinctio maiores impedit alias aut totam? Ducimus, odit illo.
+                            Hic, ex expedita.</p>
+                        <p>Accusamus, voluptates ipsa iure ullam excepturi aspernatur vitae perspiciatis commodi! Velit,
+                            iste cumque cum, perferendis deserunt ipsum laudantium sit eveniet non enim perspiciatis. A,
+                            ab reiciendis repudiandae nisi velit recusandae?</p>
                     </section>
                     <section class="happenings__image">
                         <img src="/assets/photos/hike.png" alt="a image of" class="happenings__img">
                     </section>
-                </section>
+                </article>
 
-                <section class="happenings">
+                <article class="happenings">
                     <section class="happenings__image">
                         <img src="/assets/photos/08-night.jpg" alt="a image of" class="happenings__img">
                     </section>
                     <section class="happenings__info">
                         <h2 class="happenings__subtitle">Naturnära</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam alias aut rem, molestias qui, nihil necessitatibus tempore eum eius animi ullam similique minus labore, explicabo ab id dolores tenetur?</p>
-                        <p>Dolorem earum nobis architecto amet placeat quisquam fugit magnam, incidunt sunt laborum quis hic porro consequatur consequuntur dignissimos odio non quibusdam, eaque ratione itaque! Aliquid saepe similique numquam illum sit!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam alias aut rem,
+                            molestias qui, nihil necessitatibus tempore eum eius animi ullam similique minus labore,
+                            explicabo ab id dolores tenetur?</p>
+                        <p>Dolorem earum nobis architecto amet placeat quisquam fugit magnam, incidunt sunt laborum quis
+                            hic porro consequatur consequuntur dignissimos odio non quibusdam, eaque ratione itaque!
+                            Aliquid saepe similique numquam illum sit!</p>
                     </section>
+                </article>
 
-                </section>
-
-                <section class="happenings happenings--mobile">
+                <article class="happenings happenings--mobile">
                     <section class="happenings__info">
                         <h2 class="happenings__subtitle">Vinter hos Bonz.ai</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet quisquam quia fugiat sunt porro tenetur. Sit, ipsa? Ad laudantium, iure delectus voluptatibus culpa dignissimos repudiandae eius fugit totam voluptatem!</p>
-                        <p>Impedit, ipsum, sed explicabo maiores cupiditate dolores doloribus saepe eveniet laborum perferendis repudiandae eum porro? Dolorem neque dignissimos provident, maiores dolore id, illo minus commodi, quis accusamus explicabo quibusdam rerum?</p>
-                        <p>Voluptate atque beatae maxime et veniam cupiditate, officia reprehenderit ipsa ratione. Ullam est corrupti soluta. Laudantium debitis repellat illo minima tempore accusamus nobis, expedita cum? Ipsa sunt error vero earum!</p>
-                        <p>Autem fugit quasi minus porro voluptate veniam nesciunt vel quia itaque ducimus, accusamus sit dolorem tempore beatae a distinctio maiores impedit alias aut totam? Ducimus, odit illo. Hic, ex expedita.</p>
-                        <p>Accusamus, voluptates ipsa iure ullam excepturi aspernatur vitae perspiciatis commodi! Velit, iste cumque cum, perferendis deserunt ipsum laudantium sit eveniet non enim perspiciatis. A, ab reiciendis repudiandae nisi velit recusandae?</p>                    </section>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet quisquam quia fugiat sunt
+                            porro tenetur. Sit, ipsa? Ad laudantium, iure delectus voluptatibus culpa dignissimos
+                            repudiandae eius fugit totam voluptatem!</p>
+                        <p>Impedit, ipsum, sed explicabo maiores cupiditate dolores doloribus saepe eveniet laborum
+                            perferendis repudiandae eum porro? Dolorem neque dignissimos provident, maiores dolore id,
+                            illo minus commodi, quis accusamus explicabo quibusdam rerum?</p>
+                        <p>Voluptate atque beatae maxime et veniam cupiditate, officia reprehenderit ipsa ratione. Ullam
+                            est corrupti soluta. Laudantium debitis repellat illo minima tempore accusamus nobis,
+                            expedita cum? Ipsa sunt error vero earum!</p>
+                        <p>Autem fugit quasi minus porro voluptate veniam nesciunt vel quia itaque ducimus, accusamus
+                            sit dolorem tempore beatae a distinctio maiores impedit alias aut totam? Ducimus, odit illo.
+                            Hic, ex expedita.</p>
+                        <p>Accusamus, voluptates ipsa iure ullam excepturi aspernatur vitae perspiciatis commodi! Velit,
+                            iste cumque cum, perferendis deserunt ipsum laudantium sit eveniet non enim perspiciatis. A,
+                            ab reiciendis repudiandae nisi velit recusandae?</p>
+                    </section>
                     <section class="happenings__image">
                         <img src="/assets/photos/winter.png" alt="a image of" class="happenings__img">
                     </section>
-                </section>
-            </article>
-    
-    
-            <article class="booking booking--none" id="two">
+                </article>
+            </section>
+
+
+            <section class="booking booking--none" id="result">
                 <h2 class="booking__subtitle">Lediga rum</h2>
                 <section class="booked-rooms">
 
-                    <section class="booked-rooms__room">
+                    <article class="booked-rooms__room">
                         <section class="booked-rooms__image">
-                        <img src="/assets/photos/bed2.png" alt="" class="booked-rooms__img">
+                            <img src="/assets/photos/bed2.png" alt="en bild på en säng i ett standardrum" class="booked-rooms__img">
                         </section>
                         <section class="booked-rooms__info">
-
+                            <section class="booked-rooms__room-info">
+                                <h3 class="booked-rooms__subtitle">Standard Rum</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Vårt Standardrum, 16kvm</li>
+                                    <li class="booked-rooms__list-item">Rekommenderas till 1 - 2 personer</li>
+                                    <li class="booked-rooms__list-item">En dubbelsäng 160cm</li>
+                                    <li class="booked-rooms__list-item">Frukost inkluderat</li>
+                                    <li class="booked-rooms__list-item">Utsikt mot trädgården</li>
+                                </ul>
+                            </section>
+                            <section class="booked-rooms__price">
+                                <h3 class="booked-rooms__subtitle">Pris</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Fri av- och ombokning fram till 24 timmar innan ankomstdagen</li>
+                                    <li class="booked-rooms__list-item">Betalning vid incheckning</li>
+                                </ul>
+                            </section>
+                            <section class="booked-rooms__reserve-room">
+                                <h3 class="booked-rooms__subtitle">1199 kr/natt</h3>
+                                <button class="booked-rooms__reserve-btn">Boka rum</button>
+                            </section>
                         </section>
-                    </section>
+                    </article>
 
-                    <section class="booked-rooms__room">
-
+                    <article class="booked-rooms__room">
                         <section class="booked-rooms__image">
-                            <img src="/assets/photos/bed3.png" alt="" class="booked-rooms__img">
+                            <img src="/assets/photos/bed3.png" alt="en bild på en säng i ett dubbelrum" class="booked-rooms__img">
+                        </section>
+                        <section class="booked-rooms__info">
+                            <section class="booked-rooms__room-info">
+                                <h3 class="booked-rooms__subtitle">Dubbelrum</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Vårt Dubbelrum, 34kvm</li>
+                                    <li class="booked-rooms__list-item">Rekommenderas till 1 - 2 personer</li>
+                                    <li class="booked-rooms__list-item">En dubbelsäng 180cm</li>
+                                    <li class="booked-rooms__list-item">Frukost inkluderat</li>
+                                    <li class="booked-rooms__list-item">Utsikt mot trädgården eller sjön</li>
+                                </ul>
                             </section>
-                            <section class="booked-rooms__info">
-
+                            <section class="booked-rooms__price">
+                                <h3 class="booked-rooms__subtitle">Pris</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Fri av- och ombokning fram till 24 timmar innan ankomstdagen</li>
+                                    <li class="booked-rooms__list-item">Betalning vid incheckning</li>
+                                </ul>
                             </section>
+                            <section class="booked-rooms__reserve-room">
+                                <h3 class="booked-rooms__subtitle">1449 kr/natt</h3>
+                                <button class="booked-rooms__reserve-btn">Boka rum</button>
+                            </section>
+                        </section>
+                    </article>
 
-                    </section>
-
-                        
-                    </section>
-                    <section class="booked-rooms__room">
-
+                    <article class="booked-rooms__room">
                         <section class="booked-rooms__image">
-                            <img src="/assets/photos/bed.png" alt="" class="booked-rooms__img">
+                            <img src="/assets/photos/bed.png" alt="en bild på en säng i ett deluxe rum" class="booked-rooms__img">
+                        </section>
+                        <section class="booked-rooms__info">
+                            <section class="booked-rooms__room-info">
+                                <h3 class="booked-rooms__subtitle">Deluxe Rum</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Vårt Deluxe rum, 38kvm</li>
+                                    <li class="booked-rooms__list-item">Rekommenderas till 2 personer</li>
+                                    <li class="booked-rooms__list-item">En dubbelsäng 180cm</li>
+                                    <li class="booked-rooms__list-item">Frukost inkluderat</li>
+                                    <li class="booked-rooms__list-item">Mousserat vin och choklad på rummet</li>
+                                    <li class="booked-rooms__list-item">Fullt utrustad med AI</li>
+                                    <li class="booked-rooms__list-item">Utsikt mot trädgården eller sjön</li>
+                                </ul>
                             </section>
-                            <section class="booked-rooms__info">
-
+                            <section class="booked-rooms__price">
+                                <h3 class="booked-rooms__subtitle">Pris</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Fri av- och ombokning fram till 24 timmar innan ankomstdagen</li>
+                                    <li class="booked-rooms__list-item">Betalning vid incheckning</li>
+                                </ul>
                             </section>
+                            <section class="booked-rooms__reserve-room">
+                                <h3 class="booked-rooms__subtitle">1799 kr/natt</h3>
+                                <button class="booked-rooms__reserve-btn">Boka rum</button>
+                            </section>
+                        </section>
+                    </article>
 
-                    </section>
-                    <section class="booked-rooms__room">
+                    <article class="booked-rooms__room">
                         <section class="booked-rooms__image">
-                            <img src="/assets/photos/03-night.jpg" alt="" class="booked-rooms__img">
+                            <img src="/assets/photos/03-night.jpg" alt="en bild tagen från sängen, ut mot vattnet i vår junior svit" class="booked-rooms__img">
+                        </section>
+                        <section class="booked-rooms__info">
+                            <section class="booked-rooms__room-info">
+                                <h3 class="booked-rooms__subtitle">Junior Svit</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Vår Junior Svit, 72kvm</li>
+                                    <li class="booked-rooms__list-item">Rekommenderas till 2 - 4 personer</li>
+                                    <li class="booked-rooms__list-item">Två Carpe Diem lyxsängar, 210cm</li>
+                                    <li class="booked-rooms__list-item">Frukost inkluderat</li>
+                                    <li class="booked-rooms__list-item">Mousserat vin och choklad på rummet</li>
+                                    <li class="booked-rooms__list-item">Tillgång till bubbelpool</li>
+                                    <li class="booked-rooms__list-item">Fullt utrustad med AI</li>
+                                    <li class="booked-rooms__list-item">Utsikt mot sjön</li>
+                                </ul>
                             </section>
-                            <section class="booked-rooms__info">
+                            <section class="booked-rooms__price">
+                                <h3 class="booked-rooms__subtitle">Pris</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Fri av- och ombokning fram till 24 timmar innan ankomstdagen</li>
+                                    <li class="booked-rooms__list-item">Betalning vid incheckning</li>
+                                </ul>
+                            </section>
+                            <section class="booked-rooms__reserve-room">
+                                <h3 class="booked-rooms__subtitle">2599 kr/natt</h3>
+                                <button class="booked-rooms__reserve-btn">Boka rum</button>
+                            </section>
+                        </section>
+                    </article>
 
-                            </section>
-                    </section>
-                    <section class="booked-rooms__room">
+                    <article class="booked-rooms__room">
                         <section class="booked-rooms__image">
-                            <img src="/assets/photos/05-night.jpg" alt="" class="booked-rooms__img">
+                            <img src="/assets/photos/05-night.jpg" alt="en bild på vår svit, med en soffa, en trappa och altanen ut mot vattnet" class="booked-rooms__img">
+                        </section>
+                        <section class="booked-rooms__info">
+                            <section class="booked-rooms__room-info">
+                                <h3 class="booked-rooms__subtitle">Svit</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Vår Svit, 86kvm</li>
+                                    <li class="booked-rooms__list-item">Rekommenderas till 2 - 4 personer</li>
+                                    <li class="booked-rooms__list-item">Två Carpe Diem lyxsängar, 210cm</li>
+                                    <li class="booked-rooms__list-item">Frukost inkluderat</li>
+                                    <li class="booked-rooms__list-item">Champagne och choklad på rummet</li>
+                                    <li class="booked-rooms__list-item">Tillgång till egen badbrygga, bubbelpool och bastu</li>
+                                    <li class="booked-rooms__list-item">Fullt utrustad med AI</li>
+                                    <li class="booked-rooms__list-item">Utsikt mot sjön</li>
+                                </ul>
                             </section>
-                            <section class="booked-rooms__info">
+                            <section class="booked-rooms__price">
+                                <h3 class="booked-rooms__subtitle">Pris</h3>
+                                <ul class="booked-rooms__list">
+                                    <li class="booked-rooms__list-item">Fri av- och ombokning fram till 24 timmar innan ankomstdagen</li>
+                                    <li class="booked-rooms__list-item">Betalning vid incheckning</li>
+                                </ul>
+                            </section>
+                            <section class="booked-rooms__reserve-room">
+                                <h3 class="booked-rooms__subtitle">3889 kr/natt</h3>
+                                <button class="booked-rooms__reserve-btn">Boka rum</button>
+                            </section>
+                        </section>
+                    </article>
 
-                            </section>
-                    </section>
-            
                 </section>
-
-            </article>
-    
-        <script src="/script.js"></script>
+            </section>
+        </main>
+    </div>
+    </body>
+            <script src="/script.js"></script>
 </body>
 </html>
-

@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .hero--room {
-background-image: url(/assets/photos/bed3.png);
+    background-image: url(/assets/photos/bed3.png);
 }
 
 .hero--reserve {
@@ -299,13 +299,43 @@ input[type=submit]:hover {
     padding: 0 3rem;
 }
 .booked-rooms__room {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     background-color: var(--light-color);
     box-shadow: 0 0 2rem rgba(0,0,0,.2);
     padding: 1.5rem;
 }
-
+.booked-rooms__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .booked-rooms__img {
     width: 100%;
+}
+.booked-rooms__info {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.booked-rooms__reserve-room {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.booked-rooms__reserve-btn {
+    border-radius: 1rem;
+    background-color: var(--btn-color);
+    padding:1rem 2rem;
+    margin-bottom:2rem;
+    color:  var(--light-color);
+    align-self: flex-end;
+}
+.booked-rooms__reserve-btn:hover {
+    background-color: #49565f;
 }
 
 /*Media query for ipads*/
@@ -345,7 +375,7 @@ input[type=submit]:hover {
         order: 3;
     }
 
-    .form, .happenings, .booked-rooms__room {
+    .form, .happenings, .booked-rooms__room, .booked-rooms__info {
         grid-template-columns: repeat(1,1fr);
     }
 
@@ -379,16 +409,12 @@ input[type=submit]:hover {
         height: 10vh;
     }
 
-    .header__logo {
-        left:1.5rem;
-    }
-
     .header__hamburger-btn {
         display: flex;
         align-items: center;
         position: absolute;
         top: 2rem;
-        right: 2rem;
+        left: 2rem;
         width: 2rem;
         height: 2rem;
         cursor: pointer;
@@ -430,7 +456,7 @@ input[type=submit]:hover {
     }
     .header__hamburger:checked ~ .header__menu {
         visibility: visible;
-        right: 0;
+        left: 0;
         top: 10vh;
     }
 
@@ -440,10 +466,10 @@ input[type=submit]:hover {
         position: absolute;
         width:200px;
         transition: all .8s ease-in-out;
-        right: -100%;
+        left: -100%;
         top:10vh;
-        border-bottom:var(--light-color) ridge 2px;
-        border-left:var(--light-color) ridge 2px;
+        border-bottom:var(--btn-color) ridge 4px;
+        border-right:var(--btn-color) ridge 4px;
     }
 
     .header__link:hover, .header__link--active {
