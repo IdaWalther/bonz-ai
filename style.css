@@ -270,8 +270,14 @@ input[type=submit]:hover {
     display: grid;
     justify-content: flex-end;
 }
+
 .fake__btn {
     width: 150px;
+    background-color: red;
+    color:white;
+    padding:1rem;
+    border-radius: 1rem;
+    margin:.3rem;
 }
 
 .booking--none {
@@ -298,6 +304,7 @@ input[type=submit]:hover {
 .happenings__info {
     padding: 0 3rem;
 }
+
 .booked-rooms__room {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -305,15 +312,18 @@ input[type=submit]:hover {
     box-shadow: 0 0 2rem rgba(0,0,0,.2);
     padding: 1.5rem;
 }
+
 .booked-rooms__image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .booked-rooms__img {
     width: 100%;
 }
+
 .booked-rooms__info {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1fr;
@@ -327,15 +337,19 @@ input[type=submit]:hover {
 }
 
 .booked-rooms__reserve-btn {
+    display: block;
     border-radius: 1rem;
     background-color: var(--btn-color);
-    padding:1rem 2rem;
-    margin-bottom:2rem;
-    color:  var(--light-color);
+    padding:1rem;
+    margin:1rem 0 2rem;
     align-self: flex-end;
 }
 .booked-rooms__reserve-btn:hover {
     background-color: #49565f;
+}
+
+.booked-rooms__reserve-room a {
+    color: var(--light-color);    
 }
 
 /*Media query for ipads*/
@@ -365,7 +379,7 @@ input[type=submit]:hover {
     }
     .footer__nav:nth-child(2) {
         text-align: left;
-        align-self: left;
+        align-self: flex-start;
         order: 1;
     }
 
